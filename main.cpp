@@ -29,7 +29,7 @@ using namespace std;
 			}else{
 
 				for(int j=i; j >= 1;){
-					binario = crea_binario(j);
+					binario = crea_binario(i);
 					res = j%2;
 					j = j/2;
 					if (res == 1){
@@ -73,17 +73,11 @@ using namespace std;
 				cout << endl;
 			}
 
-			//CREAR MATRIZ GIRADA 90 GRADOS
-	
-			for (int r=0; r<size; r++){
-				for (int c=0; c<size; c++){
-					matriz[c][r] = matriz[r][c];
-			}
-			}
+			
 
 			//IMPRIMIR MATRIZ GIRADA 90 GRADOS
 			cout << "MATRIZ GIRADA" << endl;
-			 for (int r=0; r<size; r++){
+			 for (int r=size; r>0; r--){
             for (int c=0; c<size; c++){
             	  cout << matriz[r][c] << " ";
          	}
