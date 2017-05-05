@@ -33,12 +33,7 @@ using namespace std;
 					res = j%2;
 					j = j/2;
 					if (res == 1){
-						cant1 = cant1+1;
-						//binario = binario +"1";
-
-					//}else{
-
-						//binario = binario + "0"; 
+						cant1 = cant1+1; 
 					}
 				
 				}
@@ -72,7 +67,7 @@ using namespace std;
 			}
 				cout << endl;
 			}
-
+			cout << endl;
 			
 
 			//IMPRIMIR MATRIZ GIRADA 90 GRADOS
@@ -89,6 +84,9 @@ using namespace std;
 	      cin >> opc;
 
 		}//fin while
+		
+		return 0;
+
 		}
 
 		void imprimir_binario(string binario, int n){
