@@ -1,10 +1,10 @@
 #include<iostream>
 #include<string>
-#include<sstream>
+#include<stdlib.h>
 using namespace std;
 
 	void imprimir_binario(string, int);
-	int contade1(int);
+	string crea_binario(int);
 
 	int main(){
 		int opc, n, cant1, res, cont, size;
@@ -29,14 +29,14 @@ using namespace std;
 			}else{
 
 				for(int j=i; j >= 1;){
-					binario = crea_binario(i);
+					binario = crea_binario(j);
 					res = j%2;
 					j = j/2;
 					if (res == 1){
 						cant1 = cant1+1;
 						//binario = binario +"1";
 
-					}else{
+					//}else{
 
 						//binario = binario + "0"; 
 					}
@@ -55,13 +55,21 @@ using namespace std;
 			cout << "Ingrese el tamaño de la matriz: ";
 			cin >> size;
 			int matriz[size][size];
-			
-			for (int rows=0; rows<size; rows++){
-				for (int col=0; col<size; col++){
-				
+
+			for(int rows = 0; rows<size; rows++){
+				for (int col =0; col<size; col++){
+					matriz[rows][col] = rand()%25;
 				}
 			} 
+		
+			cout << "MATRIZ NORMAL" << endl;
 			
+			for (int rows = 0; rows<size; rows++){
+				for (int col=0; col<size; col++){
+					cout << matriz[rows][col] << " ";
+			}
+				cout << endl;
+			}	
 		}
 		}
 
