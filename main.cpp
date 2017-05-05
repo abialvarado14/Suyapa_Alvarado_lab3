@@ -11,9 +11,9 @@ using namespace std;
 		string binario;
 
 		
-		cout << "Ingrese el ejercicio que desea: \n1.Numeros Malvados\n2.Matriz" << endl;
+		cout << "Ingrese el ejercicio que desea: \n1.Numeros Malvados\n2.Matriz\n3.Salir" << endl;
 		cin >> opc;
-
+		while (opc != 3){
 		//MENU
 		if (opc==1){
 			cout << "Ingrese el numero: ";
@@ -85,6 +85,10 @@ using namespace std;
 			}
 		
 		}
+			cout << "Ingrese el ejercicio que desea: \n1.Numeros Malvados\n2.Matriz\n3.Salir" << endl;
+	      cin >> opc;
+
+		}//fin while
 		}
 
 		void imprimir_binario(string binario, int n){
