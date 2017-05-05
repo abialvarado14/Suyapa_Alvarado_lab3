@@ -63,13 +63,33 @@ using namespace std;
 			} 
 		
 			cout << "MATRIZ NORMAL" << endl;
-			
+
+			//IMPRIMIR MATRIZ NORMAL
+
 			for (int rows = 0; rows<size; rows++){
 				for (int col=0; col<size; col++){
 					cout << matriz[rows][col] << " ";
 			}
 				cout << endl;
-			}	
+			}
+
+			//CREAR MATRIZ GIRADA 90 GRADOS
+	
+			for (int r=0; r<size; r++){
+				for (int c=0; c<size; c++){
+					matriz[c][r] = matriz[r][c];
+			}
+			}
+
+			//IMPRIMIR MATRIZ GIRADA 90 GRADOS
+			cout << "MATRIZ GIRADA" << endl;
+			 for (int r=0; r<size; r++){
+            for (int c=0; c<size; c++){
+            	  cout << matriz[r][c] << " ";
+         	}
+            cout << endl;
+			}
+		
 		}
 		}
 
