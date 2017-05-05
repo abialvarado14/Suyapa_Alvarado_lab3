@@ -77,9 +77,9 @@ using namespace std;
 
 			//IMPRIMIR MATRIZ GIRADA 90 GRADOS
 			cout << "MATRIZ GIRADA" << endl;
-			 for (int r=size; r>0; r--){
-            for (int c=0; c<size; c++){
-            	  cout << matriz[r][c] << " ";
+			 for (int r=0; r<size; r++){
+            for (int c=size-1; c>=0; c--){
+            	  cout << matriz[c][r] << " ";
          	}
             cout << endl;
 			}
