@@ -78,6 +78,7 @@ using namespace std;
          	}
             cout << endl;
 			}
+			cout << endl;
 		
 		}
 			cout << "Ingrese el ejercicio que desea: \n1.Numeros Malvados\n2.Matriz\n3.Salir" << endl;
